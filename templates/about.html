@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>About us</title>
+  <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+
+        
+
+        body {
+        background: url("images/backbroung.jpg");
+
+        text-align: center;
+        }
+
+       
+        p {
+        max-width: 700px;
+        min-height: 200px;
+        padding: 0;
+        color: rgb(6, 5, 5);
+        font-family: 'OpenSans';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: 50px;
+        margin: 0 auto;
+        }
+
+        
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i></i>
+      <span class="logo_name">Mempage</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="analytics.html" >
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="links_name">Analytics</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-bar-chart-alt-2' ></i>
+          <span class="links_name">Real Time Graph</span>
+        </a>
+      </li>
+      <li>
+        <a href="About.html"class="active">
+          <i class='bx bx-user' ></i>
+          <span class="links_name">About</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class='bx bx-log-in'></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard" >About Us</span>
+      </div>
+    </nav>
+    <br><br><br>
+    <div class="sales-boxes" style="background-image:url('images/backbroung.jpg');">
+      <div class="recent-sales box"><br>
+        <div class="title" style="text-align: center; margin-bottom: 10px;">About Us</div><br><br><br>
+        
+            <article>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into electronic typesetting, remaining. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining .
+              </p>
+            </article><br><br><br>
+            <footer>
+  
+                Developed by <a>Sreekanth, Sai Kiran & Uday Kiran</a>
+              
+              </footer><br><br><br>
+              
+
+           
+            
+
+       
+    
+
+              
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")){
+        sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+      } else {
+        sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      }
+    }
+  </script>
+</body>
+</html>
